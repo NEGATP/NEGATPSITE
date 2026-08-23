@@ -1,0 +1,73 @@
+SITE NEGATP SARL — GUIDE DE FINALISATION
+==========================================
+
+STRUCTURE DES FICHIERS
+-----------------------
+index.html          -> Accueil
+services.html        -> Nos services
+realisations.html    -> Réalisations (galerie)
+apropos.html         -> À propos
+devis.html           -> Demander un devis
+css/style.css        -> Toute la mise en forme
+js/main.js           -> Menu mobile, filtre galerie, envoi du formulaire
+images/logo/logo.png -> Votre logo (déjà intégré)
+images/gallery/       -> DOSSIER VIDE : à remplir avec vos photos
+
+3 CHOSES À FAIRE AVANT MISE EN LIGNE
+--------------------------------------
+
+1) VOS PHOTOS DE CHANTIER
+   Déposez vos images dans le dossier "images/gallery/" en les
+   nommant exactement : image1.jpg, image2.jpg, image3.jpg ... 
+   jusqu'à image35.jpg (format .jpg ou changez l'extension dans
+   le code si vous utilisez du .png).
+   - image1.jpg sert de bannière sur la page d'accueil.
+   - Les 35 images apparaissent dans une galerie unique sur la page
+     "Réalisations" (sans catégorie ni filtre).
+   Tant qu'une image n'est pas encore ajoutée, un bloc gris avec son
+   nom de fichier s'affiche à sa place (aucune image cassée).
+
+2) LIEN FACEBOOK
+   Remplacez "https://facebook.com/FAUXLIENFACEBOOK" par votre vraie
+   URL Facebook. Ce lien apparaît à 3 endroits :
+   - devis.html
+   - le footer de chaque page (index.html, services.html,
+     realisations.html, apropos.html, devis.html)
+   Astuce : utilisez "Rechercher/Remplacer" dans un éditeur de texte
+   (VS Code, Notepad++...) sur tout le dossier pour remplacer en une fois.
+
+3) FORMSPREE (ENVOI EMAIL AUTOMATIQUE)
+   Le formulaire de devis envoie déjà un message WhatsApp pré-rempli.
+   Pour qu'une copie parte aussi par email automatiquement :
+   a. Allez sur https://formspree.io et créez un compte gratuit avec
+      l'adresse negatpsarl@gmail.com.
+   b. Créez un nouveau formulaire, Formspree vous donne une URL du type :
+      https://formspree.io/f/xxxxyyyy
+   c. Ouvrez le fichier js/main.js, ligne avec :
+      var FORMSPREE_ENDPOINT = 'https://formspree.io/f/FAUXID123';
+      Remplacez 'https://formspree.io/f/FAUXID123' par votre vraie URL.
+   d. Formspree envoie un email de confirmation la première fois :
+      il faut valider ce mail pour activer la réception.
+
+4) NOM DE DOMAINE (SEO)
+   J'ai ajouté des balises de référencement (Google, partage Facebook/
+   WhatsApp) sur les 5 pages, ainsi que robots.txt et sitemap.xml.
+   Elles utilisent un domaine provisoire : "https://www.votre-domaine.ci/"
+   Une fois votre nom de domaine acheté, remplacez
+   "www.votre-domaine.ci" par votre vrai domaine partout (recherche/
+   remplace sur tout le dossier), y compris dans robots.txt et
+   sitemap.xml.
+
+HÉBERGEMENT
+------------
+Ce site est en HTML/CSS/JS pur : vous pouvez l'héberger n'importe où
+(Hostinger, OVH, Netlify, GitHub Pages...). Il suffit d'envoyer tout
+le contenu du dossier (en gardant la même organisation de sous-dossiers)
+sur votre hébergement, avec index.html à la racine.
+
+NUMÉRO WHATSAPP
+-----------------
+Le numéro utilisé pour WhatsApp est 07 07 95 75 74 (format
+international 2250707957574). Pour le changer, remplacez ce numéro
+dans js/main.js (variable WHATSAPP_NUMBER) et dans les liens
+"https://wa.me/2250707957574" présents dans chaque page HTML.
