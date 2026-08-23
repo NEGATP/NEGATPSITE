@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Numéro WhatsApp NEGATP au format international sans "+" ni "0" initial
     var WHATSAPP_NUMBER = '2250707957574';
     // ID Formspree à remplacer par le vôtre (créez un formulaire sur https://formspree.io)
-    var FORMSPREE_ENDPOINT = 'https://formspree.io/f/FAUXID123';
+    var FORMSPREE_ENDPOINT = 'https://formspree.io/f/xyegvbwj';
 
     var statusBox = document.getElementById('form-status');
 
